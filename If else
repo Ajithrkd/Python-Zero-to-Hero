@@ -1,0 +1,20 @@
+# if else is the conditional statement used in python
+
+
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+if height > 120:
+    print("You can ride the rollercoaster!")
+    age = int(input("What is your age? "))
+    if age < 12:
+        price = 5
+        print(f"Your ticket price is ${price}")
+    elif age < 18:
+        price = 7
+        print(f"Your ticket price is ${price}")
+    else:
+        price = 12
+        print(f"Your ticket price is ${price}")
+else:
+    print("Sorry, you are too short to ride this rollercoaster.")  
