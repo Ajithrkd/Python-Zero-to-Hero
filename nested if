@@ -25,3 +25,22 @@ if height >= 120:
 else:
     print("Sorry you can't enter")
 ***************************************************************************************************
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+#ticketing in a Amusement Park
+print("welcome to the Rollercoaster")
+height  = int(input("Please enter your height: "))
+if height >= 120:
+    print("You can enter into the rollercoaster")
+    age = int(input("Please enter your age: "))
+    if age <12:
+        print("You have to pay 200 rupees")
+    elif age<=18:
+        print("Please pay 300")
+    else:
+        print("You have to pay 400")
+          
+else:
+    print("Sorry you can't enter")
+////////////////////////////////////////////////////////////////////////////////////////////////
