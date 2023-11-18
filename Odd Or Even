@@ -25,9 +25,11 @@ therefore: 5 % 2 = 1
 14 ÷ 4 = 3 x 4 + 2, remainder is 2.
 
 therefore: 14 % 4 = 2
-
+********************************************************************
 number = int(input("Enter the number))
 if number%2 == 0:
   print("This is an even number")
 else:
   print("This is an odd number")
+
+***********************************************************************
