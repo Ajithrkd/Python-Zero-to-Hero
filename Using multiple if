@@ -1,0 +1,32 @@
+# Rollercoater with photo request
+/////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+             /////////////////////////////////
+                     //////////////
+                          ////
+
+print("Roller coaster")
+height = int(input("Enter your height in c.m.: "))
+bill = 0
+if height >120:
+    print("Welcome to the aventure, you can ride")
+    age = int(input("Please enter your age: "))
+    if age<12:
+        bill = 100
+        print(f"Child tickets are {bill} rupees.")
+    elif age<=18:
+        bill = 200
+        print(f"Youth tickets are {bill} rupees.")
+    else:
+        bill = 300
+        print(f"Adult tickets are {bill} rupees.")
+    wants_photo = input("Do you want a photo taken? Y or N").lower()
+    if wants_photo == "y":
+        bill+=50
+        print(f"You have to pay {bill} rupees for ride and photos.")
+    else:
+        print(f"Please pay {bill} rupees, and enjoy the ride.")
+else:
+    print("Sorry, you have to grow taller before you can ride.")
+
+//////////////////////////////////////////////////////////////////////////////////
