@@ -1,0 +1,31 @@
+////////////////////#rollercoater with photos//////////////////////////////
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+print("Welcome to rollercoaster!")
+height = int(input("Enter your height: "))
+if height >120:
+    print("You can ride")
+    age = int(input("Enter your age: "))
+    if age<12:
+        photo = input("You want photos?").lower()
+        if photo == "yes":
+            
+            print("Pay 150 rupees.")
+        else:
+            print("Pay 100 rupees")
+     
+        if age<18:
+            photo = input("You want photos?").lower()
+            if photo == "yes":
+                print("you pay 250 rupees")
+            else:
+                print("You pay 200")
+    else:
+        photo = input("You want photos?").lower()
+        if photo == "yes":
+            print("You pay 350 rupees")
+        else:
+            print("Pay 300.")
+else:
+    print("You can't ride")
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
