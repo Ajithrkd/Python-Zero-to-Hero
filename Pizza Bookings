@@ -1,0 +1,54 @@
+????????????????????????????????????????????????????
+Write the program to order pizza? Instructins were given below.
+
+# Pizza order
+###Congratulations, you've got a job at Python Pizza! Your first job is to build an automatic pizza order program.
+
+#Based on a user's order, work out their final bill.
+
+#Small pizza (S): $15
+
+#Medium pizza (M): $20
+
+#Large pizza (L): $25
+
+#Add pepperoni for small pizza (Y or N): +$2
+
+#Add pepperoni for medium or large pizza (Y or N): +$3
+
+#Add extra cheese for any size pizza (Y or N): +$1
+
+#Example Output
+#Thank you for choosing Python Pizza Deliveries!
+#Your final bill is: $28.###
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+print("Hi,welcome to Python pizza centre")
+size = input("Please enter which size you want? S or M or L : ").lower()
+bill = 0
+if size == "s":
+    bill = 15
+    print("You have selected small sized pizza.")
+elif size == "m":
+    bill = 20
+    print("You have selected medium sized pizza.")
+elif size == "l":
+    bill = 25
+    print("You have selected large sized pizza.")
+else:
+    print("You should enter S or M or L , no other sizes are available")
+pepperoni = input("Do you want to add pepperoni? Y for yes ans N for no: ").lower()
+cheese = input("Do you want extra cheese? Y for yes and N for no")
+
+if pepperoni == "y":
+    if size == "s":
+    
+        bill+=2
+       
+    elif size == "m" or size =="l":
+        
+        bill+=3
+        
+if cheese == "y":
+    bill+=1
+    print(bill)
+    print(f"Please pay $ {bill} for getting your pizza.")
